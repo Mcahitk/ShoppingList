@@ -31,12 +31,12 @@ create table if not exists user_right (
 
 insert into users (name, email, password)
 values
-  ('Javid Smith', 'javid@gmail.com', '1234'),
-  ('Julia Smith', 'julia@gmail.com', 'zk'),
-  ('Harry Smith', 'harry@gmail.com', 'he'),
-  ('Mike Smith', 'mike@gmail.com', 'mk'),
-  ('Fred Smith', 'fred@gmail.com', 'fk'),
-  ('Matt Smith', 'matt@gmail.com', 'mck')
+  ('Javid Smith', 'javid@gmail.com', md5('1234')),
+  ('Julia Smith', 'julia@gmail.com', md5('zk')),
+  ('Harry Smith', 'harry@gmail.com', md5('he')),
+  ('Mike Smith', 'mike@gmail.com', md5('mk')),
+  ('Fred Smith', 'fred@gmail.com', md5('fk')),
+  ('Matt Smith', 'matt@gmail.com', md5('mck'))
   ;
 
 insert into list (name, owner)
@@ -67,13 +67,16 @@ insert into user_right (user_id, list_id, rights)
   (2, 3, 'owner');
 
 
+
+
+
+
+
+-- user log-in check
 select *
 from users
-where email = 'asdad' and password = 'asdsad'
+where email = 'javid@gmail.com' and password = md5('1234')
 ;
-
-
-
 
 
 -- fetch all items for selected list
