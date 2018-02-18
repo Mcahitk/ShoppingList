@@ -14,9 +14,9 @@ Database
 Users
 -----
     id, name
-    1,  Cahit
-    10, Cavit
-    11, Zuleyha
+    1,  John
+    10, David
+    11, Julia
 
 
 List
@@ -30,7 +30,7 @@ ListItem
 --------
 
     id, list_id, title,    done
-    1,  1,       portakal, false
+    1,  1,       Banana, false
     2,  1,       apple,    true
     3,  2,       oranges   false
 

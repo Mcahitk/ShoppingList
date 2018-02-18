@@ -31,12 +31,12 @@ create table if not exists user_right (
 
 insert into users (name, email, password)
 values
-  ('Cavit Keskin', 'cavitkeskin@gmail.com', '1234'),
-  ('Zuleyha Keskin', 'zuhalefil@gmail.com', 'zk'),
-  ('Halid Ensar Keskin', 'halidensar@gmail.com', 'he'),
-  ('Murat Keskin', 'muratkeskin@gmail.com', 'mk'),
-  ('Ferit Keskin', 'feritkeskin@gmail.com', 'fk'),
-  ('Mehmet Cahit Keskin', 'mehmetcahit@gmail.com', 'mck')
+  ('Javid Smith', 'javid@gmail.com', '1234'),
+  ('Julia Smith', 'julia@gmail.com', 'zk'),
+  ('Hery Smith', 'hery@gmail.com', 'he'),
+  ('Mike Smith', 'mike@gmail.com', 'mk'),
+  ('Fred Smith', 'fred@gmail.com', 'fk'),
+  ('Math Smith', 'math@gmail.com', 'mck')
   ;
 
 insert into list (name, owner)
