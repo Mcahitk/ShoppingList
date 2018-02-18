@@ -33,10 +33,10 @@ insert into users (name, email, password)
 values
   ('Javid Smith', 'javid@gmail.com', '1234'),
   ('Julia Smith', 'julia@gmail.com', 'zk'),
-  ('Hery Smith', 'hery@gmail.com', 'he'),
+  ('Harry Smith', 'harry@gmail.com', 'he'),
   ('Mike Smith', 'mike@gmail.com', 'mk'),
   ('Fred Smith', 'fred@gmail.com', 'fk'),
-  ('Math Smith', 'math@gmail.com', 'mck')
+  ('Matt Smith', 'matt@gmail.com', 'mck')
   ;
 
 insert into list (name, owner)
@@ -67,21 +67,31 @@ insert into user_right (user_id, list_id, rights)
   (2, 3, 'owner');
 
 
+select email, password
+from users
+where email = 'asd' and password = 'dfg';
+
+
+
+
+
+
+
 -- fetch all items for selected list
 -- select * from list_item where list_id = 2;
 
 -- fetch active items from selected list
-select *
-from list_item i
-inner join list l on l.id = i.list_id
-where i.done = false and l.id = 2;
+-- select *
+-- from list_item i
+-- inner join list l on l.id = i.list_id
+-- where i.done = false and l.id = 2;
 
 
 -- fetch done items for selected list
-select l.id, i.*
-from list_item i
-inner join list l on l.id = i.list_id
-where i.done = true;
+-- select l.id, i.*
+-- from list_item i
+-- inner join list l on l.id = i.list_id
+-- where i.done = true;
 
 
 -- fetch all list for selected user
@@ -99,8 +109,5 @@ where i.done = true;
 -- select i.*, l.name as list_name
 -- from list_item i
 -- inner join list l on l.id = i.list_id;
-
-
-
 
 -- select * from users
