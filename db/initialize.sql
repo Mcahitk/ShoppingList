@@ -67,24 +67,26 @@ insert into user_right (user_id, list_id, rights)
   (2, 3, 'owner');
 
 
+-- fetch all items for selected list
+select * from list_item where list_id = 2;
 
-select *
-from list l
-inner join list_item i on l.id = i.list_id
-where list_id = 2
-;
+-- fetch active items from selected list
+
+-- fetch done items for selected list
 
 
-
+-- fetch all list for selected user
 -- select *
 -- from list l
 -- inner join user_right r on l.id = r.list_id
 -- where r.user_id = 6;
 
+-- [ fetch all list with owner ]
 -- select l.*, u.name, u.email
 -- from list l
 -- inner join users u on u.id = l.owner;
 
+-- show items with their list name
 -- select i.*, l.name as list_name
 -- from list_item i
 -- inner join list l on l.id = i.list_id;
