@@ -67,7 +67,10 @@ insert into user_right (user_id, list_id, rights)
   (2, 3, 'owner');
 
 
-
+select *
+from users
+where email = 'asdad' and password = 'asdsad'
+;
 
 
 
