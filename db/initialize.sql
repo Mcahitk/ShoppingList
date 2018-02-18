@@ -67,11 +67,19 @@ insert into user_right (user_id, list_id, rights)
   (2, 3, 'owner');
 
 
+
 select *
 from list l
-inner join user_right r on l.id = r.list_id
-where r.user_id = 6;
+inner join list_item i on l.id = i.list_id
+where list_id = 2
+;
 
+
+
+-- select *
+-- from list l
+-- inner join user_right r on l.id = r.list_id
+-- where r.user_id = 6;
 
 -- select l.*, u.name, u.email
 -- from list l
