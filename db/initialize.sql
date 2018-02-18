@@ -78,10 +78,10 @@ where i.done = false and l.id = 2;
 
 
 -- fetch done items for selected list
--- select l.id, i.*
--- from list_item i
--- inner join list l on l.id = i.list_id
--- where i.done = true;
+select l.id, i.*
+from list_item i
+inner join list l on l.id = i.list_id
+where i.done = true;
 
 
 -- fetch all list for selected user
