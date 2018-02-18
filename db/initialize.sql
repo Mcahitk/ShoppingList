@@ -67,10 +67,6 @@ insert into user_right (user_id, list_id, rights)
   (2, 3, 'owner');
 
 
-select email, password
-from users
-where email = 'asd' and password = 'dfg';
-
 
 
 
